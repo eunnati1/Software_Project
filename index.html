@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/iframeResizer.contentWindow.min.js"></script>
+
+<style>
+            body {
+  font-family: sans-serif, arial, helvetica;
+  background-image: url('slide_14.png');
+background-repeat: no-repeat;
+background-size: 60% 80%;
+image.style.width = '50%'
+image.style.height = 'auto'
+}
+
+button {
+  
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+div.post {
+  border-top: solid black 2px;
+}
+
+h1 {
+  width: 95%;
+  font-size: 1.5em;
+  background: lightgray;
+  padding: 0.2em;
+  text-align: justify;
+}
+
+p {
+  margin-left: 2em;
+}
+
+
+
+    
+  </style>
+
+
+
+</head>
+
+<body>
+
+
+ <div >
+        
+        
+       <div id="app">
+    </div>
+        
+    </div>
+
+     <div class="container">
+       <img src="slide_14.png" width="60%" height="auto">
+    </div>
+
+
+
+    <script type="text/javascript">
+    	const app = document.getElementById("app");
+app.style.position = "absolute";
+app.style.left = 900+'px';
+app.style.top = 380+'px';
+window.run = () => app.innerText="These membrane bound structures are called organelles";
+app.innerHTML = '<button onclick="run()">Organelle Defination</button>';
+
+    </script>
+
+</body>
